@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/inputLayout"
+    android:background="@drawable/outside_input_shape"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/fieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Field Name: "
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/inputLayout"
+        app:layout_constraintEnd_toStartOf="@+id/fieldInput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/fieldInput"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="16"
+        android:hint="Enter Field Name"
+        android:text=""
+        android:textColor="#404040"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fieldLabel"
+        app:layout_constraintTop_toTopOf="@+id/fieldLabel"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
