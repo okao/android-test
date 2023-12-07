@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string" />
+    <attr name="progressIndicatorWidth" format="float" />
+    <attr name="progressIndicatorColor" format="color" />
+    <attr name="progressStartAngle" format="float" />
+    <attr name="layout" format="reference"/>
+    <attr name="displayTextSize" format="float" />
+    <attr name="displayTextColor" format="color" />
+    <attr name="progressPathWidth" format="float" />
+    <attr name="progressPathColor" format="color" />
+    <attr name="fillColor" format="color|reference"/>
+
+    <declare-styleable name="KeypadKey">
+        <attr name="text" />
+        <attr name="layout"/>
+        <attr name="startMargin" format="integer"/>
+        <attr name="bottomMargin" format="integer"/>
+        <attr name="tapValue" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="Keypad">
+        <attr name="layout"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordField">
+        <attr name="text" />
+        <attr name="infoText" format="string" />
+        <attr name="infoTextSize" format="float" />
+        <attr name="textColor" format="color" />
+        <attr name="outlineThickness" format="float" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="FontIcon">
+        <attr name="fontFile" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="FormElement">
+        <attr name="FormElementTextHint" format="string" />
+        <attr name="FormElementTextHintColor" format="color" />
+        <attr name="FormElementInputType" format="string" />
+        <attr name="FormElementLabel" format="string" />
+        <attr name="FormElementBoxPadding" format="string" />
+    </declare-styleable>
+</resources>

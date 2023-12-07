@@ -6,4 +6,243 @@
     <color name="light_blue_600">#FF039BE5</color>
     <color name="gray_400">#FFBDBDBD</color>
     <color name="gray_600">#FF757575</color>
+
+
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorPrimary">#ff4f00</color>
+    <color name="colorPrimaryDark">#E04700</color>
+    <!--<color name="colorPrimaryDark">#20E04700</color>-->
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorGreyAccent">#60000000</color>
+
+
+    <color name="colorAccentInv">#ff4f00</color>
+    <color name="colorTranslucent">#60000000</color>
+    <color name="colorHint">#60FFFFFF</color>
+    <color name="colorTitleText">#ffffff</color>
+
+    <!--register screen-->
+
+    <color name="colorRegisterText">#DDFFFFFF</color>
+    <color name="colorRegisterLinkText">#FFFFFF</color>
+    <color name="colorUnderlineText">#30FFFFFF</color>
+    <color name="colorLoginButton">#FFFFFF</color>
+    <color name="colorLoginButtonRipple">#60000000</color>
+
+
+    <!--lock screen-->
+    <color name="colorKeypadRipple">#60000000</color>
+    <color name="colorKeypadText">#FFFFFF</color>
+    <color name="colorPasswordField">#FFFFFF</color>
+
+    <color name="colorLockInfoField">#FFFFFF</color>
+
+    <color name="colorProfileText">#FFFFFF</color>
+
+
+    <!--otp screen-->
+
+    <color name="colorOtpProgressPath">#60FFFFFF</color>
+    <color name="colorOtpProgressIndicator">#FFFFFF</color>
+    <color name="colorOtpText">#FFFFFF</color>
+    <color name="colorWhiteRipple">#60FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="textWhite">#99FFFFFF</color>
+    <color name="textPressed">#FF4F00</color>
+
+    <!--tab screen-->
+    <color name="navigationBarColor">#000000</color>
+    <color name="tabTextColor">#70FFFFFF</color>
+
+
+
+    <color name="tabTextSelectedColor">#FFFFFF</color>
+
+
+    <color name="color_tabbed_activity_black_overlay">#e6e6e6</color>
+    <!--dashboard-->
+
+    <color name="colorDashboardUserType">#FFFFFF</color>
+
+    <color name="colorFavara">#005ca3</color>
+
+    <!--account list page-->
+    <color name="colorAccountProfileCircle">#FFFFFF</color>
+    <color name="colorAccountProfileCircleText">#FF4F00</color>
+    <color name="colorAccountProfileSolidBg">#FF2900</color>
+
+    <color name="colorAccountListBackground">#F7F7F7</color>
+    <color name="colorAccountListButtonBar">#F0F0F0</color>
+
+    <color name="colorAccountListCardLight">#FFFFFF</color>
+    <color name="colorAccountListCardDark">#F7F7F7</color>
+
+    <color name="colorAccountNoTextColor">#444e3a</color>
+    <color name="colorAccountTypeBorder">#a9abae</color>
+    <color name="colorAccountTypeTextColor">#a9abae</color>
+
+    <color name="colorAccountListButtonTextColor">#939393</color>
+
+    <!--accounts details popup-->
+    <color name="colorAccountDetailsBg">#FFFFFF</color>
+    <color name="colorAccountDetailsDarkText">#444e3a</color>
+    <color name="colorAccountDetailsMedText">#7e7e7e</color>
+    <color name="colorAccountDetailsLightText">#a9abae</color>
+    <color name="colorAccountDetailsAmount">#FF4F00</color>
+    <color name="colorAccountDetailsProfileCircle">#e6e6e6</color>
+
+    <!--account history -->
+    <color name="colorAccountHistoryBg">#ffffff</color>
+    <color name="colorAccountHistorySeperator">#dadada</color>
+    <color name="colorAccountHistoryProfileCircle">#e6e6e6</color>
+    <color name="colorAccountHistoryProfileCircleText">#a9abae</color>
+    <color name="colorAccountHistoryAmount">#FF4F00</color>
+    <color name="colorAccountHistoryAmountDark">#00822B</color>
+    <color name="colorAccountHistoryDateText">#8a8a8a</color>
+    <color name="colorAccountHistoryTxTypeText">#444e3a</color>
+
+
+    <!--SELECT FOR EDIT ICON-->
+    <color name="colorSelectForEditBg">#8ca434</color>
+    <color name="colorSelectForEditText">#FFFFFF</color>
+
+    <!--account transfer main fragment-->
+
+
+    <color name="colorTransferOtpProgressPath">#60FF4F00</color>
+    <color name="colorTransferOtpProgressIndicator">#FF4F00</color>
+
+
+
+    <color name="colorAccountTransferMainBackground">#e6e6e6</color>
+    <color name="colorAccountTransferMainAccountNoTextColor">#ffffff</color>
+    <color name="colorAccountTransferMainAccountBg">#FF4F00</color>
+    <color name="colorAccountTransferMainAccountCircleText">#e6e6e6</color>
+
+    <color name="colorTransferBeneficiarySearchTint">#e6e6e6</color>
+    <color name="colorTransferBeneficiarySearch">#bfbfbf</color>
+    <color name="colorTransferBeneficiarySearchBg">#ffffff</color>
+    <color name="colorTransferBeneficiarySearchTo">#858585</color>
+    <color name="colorTransferBeneficiarySectionDark">#c4c4c4</color>
+
+
+    <color name="colorTransferCategorySelectedText">#FFFFFF</color>
+    <color name="colorTransferCategoryCircleSelected">#FF4F00</color>
+
+    <color name="colorTransferCategoryCircleFill">#ffffff</color>
+    <color name="colorTransferCategoryCircleBorder">#929292</color>
+    <color name="colorTransferCategoryTextColor">#929292</color>
+    <color name="colorTransferCategoryIconColor">#bfbfbf</color>
+
+    <color name="colorTransferBeneficiaryCircleFill">#e6e6e6</color>
+
+    <color name="colorTransferAmountUnderlineText">#929292</color>
+    <color name="colorTransferAmountHint">#bfbfbf</color>
+    <color name="colorTransferAmount">#535353</color>
+    <color name="colorTransferStep1Values">#FFFFFF</color>
+
+
+    <!--add edit beneficiary-->
+
+    <color name="colorBeneficiaryCreateTextDark">#929292</color>
+    <color name="colorBeneficiaryCreateTextError">#ff0000</color>
+    <color name="colorBeneficiaryCreateTextUnlisted">#ff6a00</color>
+
+
+
+    <!--checkbook colors-->
+    <color name="colorCbTextLight">#FFFFFF</color>
+    <color name="colorCBTextMed">#a9abae</color>
+    <color name="colorCBTextDark">#535353</color>
+
+    <color name="colorTest">#5013c995</color>
+
+    <color name="colorCbCardLight">#FFFFFF</color>
+    <color name="colorCbListCardDark">#FFFFFF</color>
+    <color name="colorCbListBackground">#e6e6e6</color>
+    <color name="colorCBStatusColor">#a9abae</color>
+    <color name="colorCBProgressBGColor">#e6e6e6</color>
+
+
+    <!--finance colors-->
+    <color name="colorFinCardLight">#FFFFFF</color>
+    <color name="colorFinListCardDark">#FFFFFF</color>
+    <color name="colorFinListBackground">#e6e6e6</color>
+    <color name="colorFinStatusColor">#a9abae</color>
+    <color name="colorFinProgressBGColor">#e6e6e6</color>
+
+    <!--chequebook leaves colors-->
+    <color name="colorCBLeavesCleared">#8ca434</color>
+    <color name="colorCBLeavesLight">#8a8a8a</color>
+
+    <!--bank selection colors-->
+    <color name="colorBankTextNormal">#a9abae</color>
+    <color name="colorBankTextSelected">#FF4F00</color>
+
+    <!--icon selection colors-->
+
+    <color name="colorCategoryIconSelected">#FFFFFF</color>
+    <color name="colorCategoryIcon">#bfbfbf</color>
+
+
+    <!--dashboard colors-->
+    <color name="colorDashboardDoughnutText">#A3a3a3</color>
+
+    <color name="colorDashboardSegmentOne">#616161</color>
+    <color name="colorDashboardSegmentTwo">#ff4f00</color>
+    <color name="colorDashboardSegmentThree">#A3a3a3</color>
+
+    <color name="colorDashboardAccountNo">#A3a3a3</color>
+    <color name="colorDashboardBalance">#616161</color>
+    <color name="colorDashboardseperator">#A3a3a3</color>
+    <color name="colorFinanceType">#ffffff</color>
+    <color name="colorFieldDataDark">#595959</color>
+
+
+    <!--transfer screen-->
+
+    <color name="colorMoneyRibbon">#EEEEEE</color>
+    <color name="colorMoneyButton">#EEEEEE</color>
+    <color name="colorMoneyButtonPressed">#FFFFFF</color>
+    <color name="colorMoneyButtonText">#AAAAAA</color>
+
+
+
+    <!--settings page-->
+    <color name="colorSettingsBg">#F7F7F7</color>
+    <color name="colorSettingsItem">#FFFFFF</color>
+
+
+    <!--chat page-->
+    <color name="colorChatMibLogo">#FFFFFF</color>
+    <color name="colorChatBg">#f7f7f7</color>
+
+
+    <!--switch colors-->
+    <color name="colorSwitchThumb">#FF4F00</color>
+    <color name="colorSwitchThumbDisabled">#AAAAAA</color>
+
+
+    <color name="colorSwitchTrack">#80FF4F00</color>
+    <color name="colorSwitchTrackGrey">#cccccc</color>
+
+    <color name="colorSwitchTrackOrange">#99FF4F00</color>
+    <color name="colorSwitchTrackOrangeDisabled">#aeaeae</color>
+
+
+
+    <color name="colorSwitchTrackDisabled">#AAAAAA</color>
+
+    <!--map-->
+    <color name="mapTabTextColor">#FFFFFF</color>
+    <color name="colorMapDirectionLine">#31adff</color>
+
+
+
+    <!--map-->
+    <color name="moreItemNormal">#FFFFFF</color>
+    <color name="moreItemFocused">#FFFFFF</color>
+    <color name="moreItemPressed">#FFFFFF</color>
+    <color name="moreItemRipple">#f1f1f1</color>
 </resources>

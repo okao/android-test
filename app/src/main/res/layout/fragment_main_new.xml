@@ -67,65 +67,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/form_layout1"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background="#F3F3F3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/main_layout"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/main_layout"
-            app:layout_constraintTop_toBottomOf="@+id/qr_layout"
-            app:layout_constraintVertical_bias="0.0">
-
-
-            <TextView
-                android:id="@+id/accountNameLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Account Name: "
-                android:textColor="#000"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/accountNameInput"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/accountNameInput"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:ems="10"
-                android:hint="Enter Account Name"
-                android:inputType="text"
-                android:text=""
-                android:textColor="#404040"
-                app:layout_constraintBottom_toBottomOf="@+id/accountNameLabel"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/accountNameLabel"
-                app:layout_constraintTop_toTopOf="@+id/accountNameLabel"
-                app:layout_constraintVertical_bias="0.5" />
-
-            <androidx.constraintlayout.helper.widget.Layer
-                android:id="@+id/layer3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/outside_input_shape"
-                android:paddingVertical="16dp"
-                android:paddingHorizontal="10dp"
-                app:constraint_referenced_ids="accountNameLabel,accountNameInput"
-                tools:ignore="MissingConstraints" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/form_layout2"
+            android:id="@+id/accountName_layout"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="#FFFFFF"
@@ -133,19 +75,21 @@
             app:layout_constraintEnd_toEndOf="@+id/main_layout"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/main_layout"
-            app:layout_constraintTop_toBottomOf="@+id/form_layout1"
+            app:layout_constraintTop_toBottomOf="@+id/qr_layout"
             app:layout_constraintVertical_bias="0.0">
 
             <com.example.qrpaynew.widgets.FormElement
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/form_layout2"
-                app:layout_constraintEnd_toEndOf="@+id/form_layout2"
-                app:layout_constraintStart_toStartOf="@+id/form_layout2"
-                app:layout_constraintTop_toTopOf="@+id/form_layout2"
+                app:layout_constraintBottom_toBottomOf="@+id/accountName_layout"
+                app:layout_constraintEnd_toEndOf="@+id/accountName_layout"
+                app:layout_constraintStart_toStartOf="@+id/accountName_layout"
+                app:layout_constraintTop_toTopOf="@+id/accountName_layout"
                 app:FormElementTextHint="Sample Hint"
                 app:FormElementTextHintColor="#BFBFBF"
                 app:FormElementInputType="date"
+                app:FormElementLabel="Account Name:  "
+                app:FormElementBoxPadding="48"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -159,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="@+id/main_layout"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/main_layout"
-            app:layout_constraintTop_toBottomOf="@+id/form_layout2"
+            app:layout_constraintTop_toBottomOf="@+id/accountName_layout"
             app:layout_constraintVertical_bias="0.0">
 
 
