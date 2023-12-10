@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
+import android.util.Log;
+
 import androidx.appcompat.widget.AppCompatTextView;
 import com.example.qrpaynew.R;
 
@@ -18,8 +20,19 @@ public class FontIcon extends AppCompatTextView {
 
     public FontIcon(Context context, AttributeSet attrs) {
         super(context, attrs);
+
+        Log.v("FT3","font:"+font);
+        Log.v("context","context:"+context);
+        Log.v("attrs","attrs:"+attrs);
+
         initializeAttributes(context, attrs);
+
+        Log.v("FT3","font:"+ "fonts/"+font+".ttf");
+        Log.v("FT3","assets" + context.getAssets());
+
         Typeface mTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/"+font+".ttf");
+
+        Log.v("FT3","mTypeface:"+mTypeface);
         this.setTypeface(mTypeface);
 
     }
@@ -28,6 +41,5 @@ public class FontIcon extends AppCompatTextView {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.FontIcon);
         font = ta.getString(R.styleable.FontIcon_fontFile);
         ta.recycle();
-
     }
 }

@@ -1,17 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context=".QRScannerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_frame_left_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_frame_right_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_frame_top_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="48dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_frame_down_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="32dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/qr_code_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="400dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/main_frame_left_guide"
+        app:layout_constraintTop_toTopOf="@+id/main_frame_top_guide">
+
+        <TextView
+            android:id="@+id/faisa_mobile_logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="faisamobile"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/qr_code_layout"
+            app:layout_constraintBottom_toTopOf="@+id/scanner_view"
+            app:layout_constraintEnd_toEndOf="@+id/qr_code_layout"
+            app:layout_constraintStart_toStartOf="@+id/qr_code_layout"
+            app:layout_constraintTop_toTopOf="@+id/qr_code_layout"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/scan_to_pay_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Scan to Pay"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faisa_mobile_logo" />
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="@color/colorAccentInv"
+            app:frameCornersRadius="4dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.65"
+            app:frameThickness="4dp"
+            app:frameVerticalBias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scan_to_pay_title"
+            app:maskColor="#77000000" >
+
+        </com.budiyev.android.codescanner.CodeScannerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/qr_code_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_code_layout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/vb_btns_lf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:id="@+id/align_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Align The QR Code To The Frame To Scan"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_qr_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="-10dp"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text="Create QR"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccentInv"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/scan_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/scan_btn"
+            app:layout_constraintTop_toTopOf="@+id/scan_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/my_qr_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="-10dp"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text="My QR"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccentInv"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/scan_btn"
+            app:layout_constraintEnd_toStartOf="@+id/scan_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/scan_btn" />
+
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="create_qr_btn,scan_btn,my_qr_btn" />
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cancel"
+            android:textColor="@color/colorAccountListButtonTextColor"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scan_btn" />
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/my_qr_btn_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/outside_orangle_shape"
+            android:elevation="-2dp"
+            android:paddingVertical="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="0dp"
+            app:constraint_referenced_ids="my_qr_btn"
+            app:layout_constraintBottom_toBottomOf="@+id/scan_btn"
+            app:layout_constraintEnd_toStartOf="@+id/scan_btn"
+            app:layout_constraintTop_toTopOf="@+id/scan_btn"
+            app:layout_constraintVertical_bias="0.47" />
+
+        <androidx.constraintlayout.helper.widget.Layer
+            android:id="@+id/create_qr_btn_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="create_qr_btn"
+            android:background="@drawable/outside_orangle_shape"
+            android:paddingVertical="2dp"
+            android:paddingEnd="2dp"
+            android:paddingStart="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/scan_btn"
+            app:layout_constraintStart_toEndOf="@+id/scan_btn"
+            app:layout_constraintTop_toTopOf="@+id/scan_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scan_btn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="80dp"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:backgroundTint="@color/colorAccentInv"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/create_qr_btn"
+            app:layout_constraintStart_toEndOf="@+id/my_qr_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
